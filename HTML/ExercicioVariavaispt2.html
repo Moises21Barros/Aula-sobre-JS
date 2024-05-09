@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Usuário</title>
+</head>
+
+<body>
+    <h1>Informe seus dados</h1>
+    <form id="userInfoForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="neighborhood">Bairro onde mora:</label>
+        <input type="text" id="neighborhood" name="neighborhood" required><br><br>
+
+        <button type="button" onclick="processFormData()">Enviar</button>
+        
+    </form>
+    <h1>Informe dois números inteiros</h1>
+    <form id="numberForm">
+        <label for="num1">Número 1:</label>
+        <input type="text" id="num1" name="num1" required><br><br>
+
+        <label for="num2">Número 2:</label>
+        <input type="text" id="num2" name="num2" required><br><br>
+
+        <button type="button" onclick="calculateSum()">Calcular Soma</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="/JS/ExercicioVariaveispt2.js"></script>
+</body>
+
+</html>
