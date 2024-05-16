@@ -1,6 +1,9 @@
 // IMC
 function calcularIMC(peso, altura) {
-    var imc = peso / (altura * altura);
+    return peso / (altura * altura);
+}
+
+function classificarPeso(imc) {
     if (imc < 16.9) {
         return "Muito abaixo do peso";
     } else if (imc >= 17 && imc <= 18.4) {
@@ -17,9 +20,11 @@ function calcularIMC(peso, altura) {
         return "Obesidade grau III";
     }
 }
-// Real pra Euro
-function converterParaEuro(valorEmReal) {
-    var taxaCambioEuro = 6.3; // Considerando uma taxa de câmbio fictícia
-    var valorEmEuro = valorEmReal / taxaCambioEuro;
-    return valorEmEuro;
-}
+
+var peso = parseFloat(prompt("Digite seu peso em kg:"));
+var altura = parseFloat(prompt("Digite sua altura em metros:"));
+
+var imc = calcularIMC(peso, altura);
+var classificacao = classificarPeso(imc);
+
+alert("Seu IMC é: " + imc.toFixed(2) + "\nClassificação de peso: " + classificacao);
