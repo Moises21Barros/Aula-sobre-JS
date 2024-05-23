@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#cookie-container {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#cookie {
+    width: 200px;
+    transition: transform 0.1s;
+}
+
+#cookie:active {
+    transform: scale(0.95);
+}
+
+p {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+}
