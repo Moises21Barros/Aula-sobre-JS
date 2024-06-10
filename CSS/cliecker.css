@@ -18,11 +18,13 @@ body {
 
 #cookie {
     width: 200px;
+    filter: invert(0%);
     transition: transform 0.1s;
 }
 
 #cookie:active {
-    transform: scale(0.95);
+    filter: invert(100%);
+    transform: scale(0.9);
 }
 
 p {
